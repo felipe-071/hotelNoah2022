@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <link rel="stylesheet" href="css/default.css">
+       <link rel="stylesheet" href="css/reset.css">
+       <title>Reserva</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+       <meta name="author" content="Felipe">
+       <meta name="keywords" content="Hotel, viagem, turismo, ponto turístico">
+       <meta name="description" content="Faça sua reserva">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <script src="js/script.js"></script>
+
+    <div id="container4">
+    <header>
+                <div id="cabecalho">
+                <a href="/cadastro-login"> 
+                    <img id="usuario" src="img/iconeUsuario.png" alt="ícone de login ou cadastro"> 
+                </a>
+                <a href="/"> 
+                    <img id="logoprincipal" src="img/Hotelcinza.png" alt="logo do hotel Noah"></a>
+
+            <nav>
+               <div id="menu-bar">
+                   <div id="menu" onclick="onClickMenu()">
+                       <div id="bar1" class="bar"></div>
+                       <div id="bar2" class="bar"></div>
+                       <div id="bar3" class="bar"></div>
+
+                   </div>
+
+                   <ul class="nav" id="nav">
+                       <li><a href="/">Home</a></li>
+                       <li><a href="/cadastro-login">Cadastro/Login</a></li>
+                       <li><a href="/reserva">Reserva</a></li>
+                   </ul>
+               </div>
+               <div id="menu-bg" class="menu-bg"></div>
+            </nav>
+
+                </div>
+            </header> 
+
+
+    <section>
+       <img id="topo-reserva" src="img/topoReserva.png" alt="Foto de um dos quartos do hotel">
+        <h1 id="reserva" class="titulo">RESERVA</h1>
+    </section>
+
+<section id="quantidades">
+    <div id="form-reserva">
+    <form action="" method="">
+        <div id="estadia">
+        <label for="checkin">ESTADIA:</label><input type="date" id="checkin" name="check-in" placeholder="Check-in">
+        <input type="date" id="checkout" name="checkout" placeholder="Check-out">
+        </div>
+
+        <div id="pessoas">
+            <label>ADULTOS:</label> 
+            <select id="primeiroselect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5+">5+</option>
+            </select>
+
+            <label>CRIANÇAS:</label> 
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5+">5+</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+<main>
+    <section id="quarto1" class="quartos">
+        <img id="home" class="quarto" src="img/homemais.jpg">
+        <h2 id="titulo2Reserva">HOME+</h2>
+        <p class="descricao">4 pessoas | 2 camas de casal | 84m²</p>
+        <p class="descricao2">Sala de estar, sofá, duas camas de casal, ducha <br>
+        massageadora, banheira com TV LCD, secador de <br>
+        cabelo, WIFI grátis, ar condicionado, cofre, TV a cabo,<br>
+        Apple TV, DVD, frigobar, cafeteira/chaleira.
+        </p>
+        <hr>
+
+        <p class="preco">R$ 350,00</p>
+        <p class="preco2">Por noite <br>
+        Excluindo impostos e taxas</p>
+        <button class="botaoreserva" id="bquarto1"><strong>RESERVAR AGORA</strong></button>
+    </section>
+
+    <section id="quarto2" class="quartos">
+        <img class="quarto" src="img/suiteNoah.jpg">
+        <h2 id="titulo2Reserva">Suíte NOAH</h2>
+        <p class="descricao">3 pessoas | 1 cama de casal | 84m²</p>
+        <p class="descricao2">WIFI grátis, ar condicionado, TV a cabo, DVD, Apple TV <br>
+        home theater 5.1 digital surround, cofre, minibar,<br>
+        ducha de hidromassagem de pressão, secador de<br>
+        cabelo, cafeteira/chaleira.
+        </p>
+        <hr>
+
+        <p class="preco">R$ 375,00</p>
+        <p class="preco2">Por noite <br>
+        Excluindo impostos e taxas</p>
+        <button class="botaoreserva" id="bquarto1"><strong>RESERVAR AGORA</strong></button>
+    </section>
+
+    <section id="quarto3" class="quartos">
+        <img class="quarto" src="img/kingDeluxe.jpg">
+        <h2 id="titulo2Reserva">King Deluxe</h2>
+        <p class="descricao">3 pessoas | 1 cama de casal | 64m²</p>
+        <p class="descricao2">WIFI grátis, ar condicionado, TV a cabo, DVD, Apple TV <br>
+        home theater 5.1 digital surround, cofre, minibar,<br>
+        ducha de hidromassagem de pressão, secador de<br>
+        cabelo, cafeteira/chaleira.
+        </p>
+        <hr>
+
+        <p class="preco">R$ 399,00</p>
+        <p class="preco2">Por noite <br>
+        Excluindo impostos e taxas</p>
+        <button class="botaoreserva" id="bquarto1"><strong>RESERVAR AGORA</strong></button>
+    </section>
+
+    <section id="quarto4" class="quartos">
+        <img class="quarto" src="img/executivo.jpg">
+        <h2 id="titulo2Reserva">Executivo</h2>
+        <p class="descricao">3 pessoas | 1 cama de casal | 84m²</p>
+        <p class="descricao2">WIFI grátis, ar condicionado, TV a cabo, DVD, Apple TV <br>
+        home theater 5.1 digital surround, cofre, minibar,<br>
+        ducha de hidromassagem de pressão, secador de<br>
+        cabelo, cafeteira/chaleira.
+        </p>
+        <hr>
+
+        <p class="preco">R$ 320,00</p>
+        <p class="preco2">Por noite <br>
+        Excluindo impostos e taxas</p>
+        <button class="botaoreserva" id="bquarto1"><strong>RESERVAR AGORA</strong></button>
+    </section>
+</main>
+
+    <footer id="footer4">
+        <section>
+           <a href="/"><img id="logofooter" src="img/hotelBrancco.png" alt="logo do hotel Noah"></a>
+             <div id="redessociais">
+                <a href="https://instagram.com"><img id="logoinsta" class="redesocial" src="img/iconeInstagram.png" alt="Instagram do Hotel"></a>
+                <a href="https://facebook.com"><img id="logoface" class="redesocial" src="img/iconeFacebook.png" alt="Facebook do Hotel"></a>
+                <a href="https://whatsapp.com"><img id="logowhatsapp" class="redesocial" src="img/iconeWhatsapp.png" alt="WhatsApp do Hotel"></a>
+                <a href="https://twitter.com"><img id="logotwitter" class="redesocial" src="img/iconeTwitter.png" alt="Twitter do Hotel"></a>
+            </div>
+
+            <a href="/reserva"><button><strong>RESERVE AGORA!</strong></button></a>
+        </section>
+
+        <section>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.09726109455!2d-46.66908538576184!3d-23.564950084681037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57806e5988d9%3A0xa38687ec90914aa3!2sR.%20Oscar%20Freire%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1619222859700!5m2!1spt-BR!2sbr" width="208" height="168" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    </footer> 
+
+</section>
+</div>
+</body>
+</html>

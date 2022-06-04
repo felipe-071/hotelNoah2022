@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <link rel="stylesheet" href="css/default.css">
+       <link rel="stylesheet" href="css/reset.css">
+       <title>Noah Hotel</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+       <meta name="author" content="Felipe">
+       <meta name="keywords" content="Hotel, viagem, turismo, ponto turístico">
+       <meta name="description" content="Bem-vindo ao Hotel Noah!">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="js/script.js"></script>
+
+
+         <div id="container">
+            <header>
+                <div id="cabecalho">
+                <a href="/cadastro-login"> 
+                    <img id="usuario" src="img/iconeUsuario.png" alt="ícone de login ou cadastro"> 
+                </a>
+                <a href="/"> 
+                    <img id="logoprincipal" src="img/Hotelcinza.png" alt="logo do hotel Noah"></a>
+
+            <nav>
+               <div id="menu-bar">
+                   <div id="menu" onclick="onClickMenu()">
+                       <div id="bar1" class="bar"></div>
+                       <div id="bar2" class="bar"></div>
+                       <div id="bar3" class="bar"></div>
+
+                   </div>
+
+                   <ul class="nav" id="nav">
+                       <li><a href="/">Home</a></li>
+                       <li><a href="/cadastro-login">Cadastro/Login</a></li>
+                       <li><a href="/reserva">Reserva</a></li>
+                   </ul>
+               </div>
+               <div id="menu-bg" class="menu-bg"></div>
+            </nav>
+
+                </div>
+            </header>
+
+            
+                <section id="section1">
+                      <img class="slideshow" src="img/slideshow1.jpg" alt="Vista frontal do hotel Noah">
+                </section>
+                
+                <main>
+                <section id="section2">
+                    <img id="boasvindas" src="img/boasVindas.jpg">
+
+                    <div id="textoecontraste">
+                    <h1 class="titulo">BEM-VINDO!</h1>
+                    <!--Pequena adaptação para a leitura na web-->
+                    <p id="mensagem" class="textos"> Sinta-se à vontade, você <br> 
+                        está em casa. Nossos <br>
+                        serviços prezam por ir <br>
+                        além de expectativas, <br>
+                        dando a devida atenção a <br>
+                        cada etapa do processo.<br>
+                        Aqui, valorizamos os <br>
+                        detalhes que fazem a diferença.</p>
+                        <a href="/reserva"> <button id="da2section"><font color="#F4F3EE"><strong>RESERVE AGORA!</strong></font></button></a>
+
+                    </div>
+             </section>
+
+             <section id="section3">
+                    <h2 class="titulo2">ENTRETENIMENTO</h2>
+                    <img id="segslideshow" src="img/entretSlide1.png" alt="Opção de entretenimento no Hotel">
+                    <div class="textos" id="textoentret">
+                    <p>A estrutura e a localização do Hotel</br>
+                        Noah te dão várias opções de lazer, dentro  </br>
+                        e fora do hotel. Piscina? SPA Day? </br>
+                        Galeria de artes? Quem decide </br>
+                        é você! </br>
+                    </div>
+             </section>
+
+             <section id="section4">
+                <div>
+                    <h2 class="titulo2">ACOMODAÇÕES</h2>
+                    
+                </div>
+                <a href="/reserva"><button>SAIBA MAIS</button></a>
+                 <img id="quartos" src="img/acomodacoes.png" alt="Algumas fotos dos quartos do hotel">
+                     
+                     
+             </section>
+
+             <section id="section5">
+                <h2>GASTRONOMIA</h2>
+                 <img id="restaurante" src="img/gastronomiaFundo.png" alt="foto de um prato do restaurante do hotel">
+                 <div class="textos" id="textogastr">
+                    <p>O melhor da gastronomia brasileira 
+                       é mostrado em nosso restaurante. 
+                       Aberto a todos, com uma aura 
+                       aconchegante e um cardápio delicioso 
+                       que atende a todos os gostos. Você
+                       vai se surpreender!</p>
+                 </div>
+             </section>
+            </main>
+
+            <footer id="footer1">
+                <section>
+                   <a href="/"><img id="logofooter" src="img/hotelBrancco.png" alt="logo do hotel Noah"></a>
+                     <div id="redessociais">
+                        <a href="https://instagram.com"><img id="logoinsta" class="redesocial" src="img/iconeInstagram.png" alt="Instagram do Hotel"></a>
+                        <a href="https://facebook.com"><img id="logoface" class="redesocial" src="img/iconeFacebook.png" alt="Facebook do Hotel"></a>
+                        <a href="https://whatsapp.com"><img id="logowhatsapp" class="redesocial" src="img/iconeWhatsapp.png" alt="WhatsApp do Hotel"></a>
+                        <a href="https://twitter.com"><img id="logotwitter" class="redesocial" src="img/iconeTwitter.png" alt="Twitter do Hotel"></a>
+                    </div>
+
+                <button><strong>RESERVE AGORA!</strong></button>
+                </section>
+
+                <section>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.09726109455!2d-46.66908538576184!3d-23.564950084681037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57806e5988d9%3A0xa38687ec90914aa3!2sR.%20Oscar%20Freire%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1619222859700!5m2!1spt-BR!2sbr" width="208" height="168" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+
+            </footer> 
+
+
+        </div>
+    </body>
+
+</html>

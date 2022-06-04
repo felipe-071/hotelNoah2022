@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <link rel="stylesheet" href="css/default.css">
+       <link rel="stylesheet" href="css/reset.css">
+       <title>Cadastro/Login</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+       <meta name="author" content="Felipe">
+       <meta name="keywords" content="Hotel, viagem, turismo, ponto turístico">
+       <meta name="description" content="Cadastre-se ou faça login">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="js/script.js"></script>
+
+        <header>
+            <div id="cabecalho">
+            <a href="/cadastro-login"> 
+                <img id="usuario" src="img/iconeUsuario.png" alt="ícone de login ou cadastro"> 
+            </a>
+            <a href="/"> 
+                <img id="logoprincipal" src="img/Hotelcinza.png" alt="logo do hotel Noah"></a>
+
+        <nav>
+           <div id="menu-bar">
+               <div id="menu" onclick="onClickMenu()">
+                   <div id="bar1" class="bar"></div>
+                   <div id="bar2" class="bar"></div>
+                   <div id="bar3" class="bar"></div>
+
+               </div>
+
+               <ul class="nav" id="nav">
+                   <li><a href="/">Home</a></li>
+                   <li><a href="/cadastro-login">Cadastro/Login</a></li>
+                   <li><a href="/reserva">Reserva</a></li>
+               </ul>
+           </div>
+           <div id="menu-bg" class="menu-bg"></div>
+        </nav>
+
+            </div>
+        </header>
+
+<article id="cadastro">
+         <div id="container2">
+            
+                
+            
+                <section>
+                    <img id="topodocadastro" src="img/cadastroTopo.png">
+                    <h1 class="titulo">CADASTRO</h1>
+                </section>
+                
+                <main>
+                    <div id="englobando-form">
+                        <img id="fundoCadastro" src="img/fundoCadastro.png">
+                        </div>
+                        <section id="alternativalogin">
+                            <img id="iconeLogin" src="img/iconeUsuarioCadastro.png" alt="ícone do usuário">
+                                <p>JÁ POSSUI UMA CONTA? <a href="javascript:navegacao(2);"><u>FAÇA LOGIN</u></a></p>
+                                <div id="entrerede">
+                                    <hr>
+                                    <hr>
+                                    <p>OU</p>
+                                    <img id="gmail" class="rede" src="img/iconeGoogle.png" alt="Logo para o login através do gmail">
+                                    <a href="https://pt-br.facebook.com/"> <img id="face" class="rede" src="img/iconeFacebooklogin.png" alt="Logo para o login através do Facebook"></a>
+                                    <a href="https://appleid.apple.com/"><img id="apple" class="rede" src="img/iconeApple.png" alt="Logo para login através da Apple"></a>
+                                    
+                                </div>
+                        </section>
+
+
+                        <section id="formulario1"> 
+                        <h2>INFORMAÇÕES PESSOAIS</h2> <br>
+                                <form action="" method="">
+                                    <fieldset>
+                                    <input type="text" id="nome" class="campo" name="nome" placeholder="Nome" size="14px">
+                                    <input type="text" id="sobrenome" class="campo" name="sobrenome" placeholder="Sobrenome" size="20px">
+                                    <input type="tel" id="telUser" class="campo" name="telefone" placeholder="Telefone" size="17px">
+                                    <input type="tel" id="celularUser" class="campo" name="celular" placeholder="Celular" size="17px">
+                                    <input type="email" id="emailUser" class="campo" name="email" placeholder="Email" size="14px">
+                                    <input type="number" id="cpfUser" class="campo" name="cpf" placeholder="CPF"> 
+                                    <select name="select">
+                                        <option value="Acre">Acre </option>
+                                        <option value="Alagoas">Alagoas </option>
+                                        <option value="Amapá">Amapá</option>
+                                        <option value="Amazonas">Amazonas</option>
+                                        <option value="Bahia">Bahia</option>
+                                        <option value="Ceará">Ceará</option>
+                                        <option value="Espírito Santo">Espírito Santo</option>
+                                        <option value="Goiás">Goiás</option>
+                                        <option value="Mato Grosso">Mato Grosso</option>
+                                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                        <option value="Minas Gerais">Minas Gerais</option>
+                                        <option value="Pará">Pará</option>
+                                        <option value="Paraíba">Paraíba</option>
+                                        <option value="Paraná">Paraná</option>
+                                        <option value="Pernambuco">Pernambuco</option>
+                                        <option value="Piauí">Piauí</option>
+                                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                        <option value="Rondônia">Rondônia</option>
+                                        <option value="Roraima">Roraima</option>
+                                        <option value="Santa Catarina">Santa Catarina</option>
+                                        <option value="São Paulo">São Paulo</option>
+                                        <option value="Sergipe">Sergipe</option>
+                                        <option value="Tocantins">Tocantins</option>
+                                      </select>
+                                    <input type="text" id="cidadeUser" class="campo" name="cidade" placeholder="Cidade" size="16">
+                                    <input type="text" id="ruaUser" class="campo" name="rua" placeholder="Rua" size="25">
+                                    <input type="number" id="endUser" class="campo" name="casa-apto" placeholder="Casa/Apto">
+                                </fieldset>
+                                </form>
+                        </section>
+
+                        <section id="formulario2">
+                        <fieldset>
+                            <form action="" method="">
+                            <h2 id="title-form">DADOS DE CADASTRO</h2> <br>
+                            <input type="text" id="nomedeUser" class="campo" name="nomedeUser" placeholder="Nome de Usuário" size="38">
+                            <input type="password" id="senha" class="campo" name="senha" placeholder="Crie sua senha" size="38">
+                            <input type="password" id="confirmSenha" class="campo" name="confirmSenha" placeholder="Confirme sua senha" size="38">
+                            <input type="submit" id="cadastrar" content="CADASTRAR">
+                        </fieldset>
+                        </form>
+                        </section>
+                       
+            </main>
+
+        <footer id="footer2">
+                <section>
+                   <a href="/"><img id="logofooter" src="img/hotelBrancco.png" alt="logo do hotel Noah"></a>
+                     <div id="redessociais">
+                        <a href="https://instagram.com"><img id="logoinsta" class="redesocial" src="img/iconeInstagram.png" alt="Instagram do Hotel"></a>
+                        <a href="https://facebook.com"><img id="logoface" class="redesocial" src="img/iconeFacebook.png" alt="Facebook do Hotel"></a>
+                        <a href="https://whatsapp.com"><img id="logowhatsapp" class="redesocial" src="img/iconeWhatsapp.png" alt="WhatsApp do Hotel"></a>
+                        <a href="https://twitter.com"><img id="logotwitter" class="redesocial" src="img/iconeTwitter.png" alt="Twitter do Hotel"></a>
+                    </div>
+
+                    <a href="/reserva"><button><strong>RESERVE AGORA!</strong></button></a>
+                </section>
+
+                <section>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.09726109455!2d-46.66908538576184!3d-23.564950084681037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57806e5988d9%3A0xa38687ec90914aa3!2sR.%20Oscar%20Freire%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1619222859700!5m2!1spt-BR!2sbr" width="208" height="168" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+
+            </footer> 
+
+            </article> 
+
+
+            <article id="login">
+
+                <div id="container3">
+
+                <section>
+                    <img id="topodocadastro" src="img/cadastroTopo.png">
+                    <h1 id="titulogin">LOGIN</h1>
+                </section>
+
+                <main>
+                    <div id="englobando-form">
+                        <img id="fundoCadastro2" src="img/fundoCadastro.png">
+                        </div>
+                        <section id="alternativalogin">
+                            <img id="iconeLogin" src="img/iconeUsuarioCadastro.png" alt="ícone do usuário">
+                                <p>AINDA NÃO POSSUI UMA CONTA? <a href="javascript:navegacao(1)"> <u>CADASTRE-SE</a></u></p>
+                                <div id="entrerede">
+                                    <hr>
+                                    <hr>
+                                    <p>OU</p>
+                                    <a href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com/search%3Fq%3Dgoogle%26oq%3Dgoogle%26aqs%3Dchrome..69i57j0i271l3.847j0j1%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ">
+                                    <img id="gmail" class="rede" src="img/iconeGoogle.png" alt="Logo para o login através do gmail"></a>
+                                    <a href="https://pt-br.facebook.com/"> <img id="face" class="rede" src="img/iconeFacebooklogin.png" alt="Logo para o login através do Facebook"></a>
+                                    <a href="https://appleid.apple.com/"><img id="apple" class="rede" src="img/iconeApple.png" alt="Logo para login através da Apple"></a>
+                                    
+                                </div>
+                                <div id="form-login">
+                                    <h2>ENTRE NA SUA CONTA</h2>
+                                    <form action="" method="">
+                                        <fieldset>
+                                            <input type="text" id="nomedeUser" class="campo" name="nomedeUser" placeholder="Nome de Usuário ou Email" size="39">
+                            <input type="password" id="senha" class="campo" name="senha" placeholder="Senha" size="39">
+                                            </fieldset>
+                                            </form>
+                                            <input type="submit" id="cadastrar" content="ENTRAR">
+                                </div>
+                        </section>
+                        </main>
+
+                        <footer id="footer3">
+                            <section>
+                               <a href="/"><img id="logofooter" src="img/hotelBrancco.png" alt="logo do hotel Noah"></a>
+                                 <div id="redessociais">
+                                    <a href="https://instagram.com"><img id="logoinsta" class="redesocial" src="img/iconeInstagram.png" alt="Instagram do Hotel"></a>
+                                    <a href="https://facebook.com"><img id="logoface" class="redesocial" src="img/iconeFacebook.png" alt="Facebook do Hotel"></a>
+                                    <a href="https://whatsapp.com"><img id="logowhatsapp" class="redesocial" src="img/iconeWhatsapp.png" alt="WhatsApp do Hotel"></a>
+                                    <a href="https://twitter.com"><img id="logotwitter" class="redesocial" src="img/iconeTwitter.png" alt="Twitter do Hotel"></a>
+                                </div>
+            
+                                <a href="/reserva"><button><strong>RESERVE AGORA!</strong></button></a>
+                            </section>
+            
+                            <section>
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.09726109455!2d-46.66908538576184!3d-23.564950084681037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57806e5988d9%3A0xa38687ec90914aa3!2sR.%20Oscar%20Freire%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1619222859700!5m2!1spt-BR!2sbr" width="208" height="168" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </section>
+            
+                        </footer> 
+
+                    </div>
+
+            </article>
+
+         </div>
+    </body>
+</html>

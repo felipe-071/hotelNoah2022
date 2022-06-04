@@ -1,0 +1,824 @@
+*{
+    box-sizing: border-box;
+}
+
+a { 
+    color: inherit; 
+} 
+
+#cadastro{
+    display: block;
+}
+
+#login{
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+section{
+    position: absolute;
+}
+
+#menu{
+    width: 50px;
+    height: 50px;
+    margin: 50px 0 33px 33px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 9px;
+    width: 100%;
+    background-color: #463f3a;
+    display: block;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+#gmail{
+    border-radius: 250px;
+}
+
+.rede{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 430px;
+    left: 153px;
+    margin-right: 15px;
+}
+
+#entrerede hr{
+    position: relative;
+    display: inline-flex;
+    margin-right: 35px;
+    width: 67px;
+    top: 443px;
+    left: 153px;
+}
+
+#entrerede p{
+    margin-bottom: 5px; 
+}
+
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+
+#fundo-escuro{
+    background-color: rgb(0, 0, 0);
+}
+
+.nav li a{
+    color: #FDFFF7;
+    text-decoration: none;
+}
+
+.nav li a:active{
+    font-weight: bold;
+}
+
+.nav li{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    right: 83px;
+    top: 0px;
+    font-family: "Bebas Neue", "Gill Sans MT", sans-serif;
+    list-style: none;
+    padding: 26px 0;
+}
+
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.menu-bg, #menu-bar{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.menu-bg{
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    width: 0;
+    height: 0;
+    margin: 50px 0 33px 33px;
+    background: rgba(190, 204, 107, 0.95);
+    transition: 0.3s ease;
+}
+
+#menu-bar{
+    z-index: 2;
+}
+
+.change-bg{
+    width: 185px;
+    height: 437px;
+    transform: translate(-60%, -30%);
+}
+
+.change .bar{
+    background-color: white;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2{
+    opacity: 0;
+}
+
+.change{
+    display: block;
+}
+
+#container{
+    background-color: #F4F3EE;
+    height: 3352px;
+    width: 480px;
+}
+
+#container2{
+    background-color: #F4F3EE;
+    height: 1400px;
+    width: 480px;
+}
+#container3{
+    background-color: #F4F3EE;
+    width: 480px;
+    height: 950px;
+    position: relative;  
+}
+
+#container4{
+    background-color: #F4F3EE;
+    height: 3300px;
+    width: 480px;
+}
+
+header{
+    background-color: #FDFFF7;
+    position: absolute;
+    width: 480px;
+    z-index: 3;
+    height: 116px;
+
+}
+
+#usuario{
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+#usuario-cadastro{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+}
+
+#logoprincipal{
+    width: 190px;
+    height: 85px;
+    position: relative;
+    top: 23px;
+    left: 145px;
+}
+
+nav{
+    position: absolute;
+    top: -20px;
+    right: 107px;
+}
+
+#section1{
+    top: 117px;
+}
+
+@keyframes animacao{
+    to {
+        font-size: 32px;
+    };
+
+}
+
+@keyframes animacao2{
+    to {
+        font-size: 38px;
+    };
+
+}
+
+.slideshow{
+    width: 480px;
+    height: 320px;
+}
+
+#section2{
+    top: 449px;
+}
+
+#boasvindas{
+    position: absolute;
+    z-index: 1;
+    width: 480px; 
+    height: 619px;
+}
+
+#textoecontraste{
+    background-color: rgba(70, 63, 58, 0.64);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    width: 436px;
+    height: 571px;
+    z-index: 2;
+    left: 22px;
+    top: 24px;
+    color: #F4F3EE;
+} 
+
+#textoecontraste h1{
+    top: 30px;
+    left: 57px
+}
+
+#textoecontraste p{
+    top: 130px;
+    font-size: 34px;
+}
+
+.titulo{
+    font-family: 'Bebas Neue';
+    font-size: 90px;
+    position: absolute;
+    top: 138px; 
+    left: 101px;
+    color:#F4F3EE;
+    z-index: 0;
+}
+#titulogin{
+    font-family: 'Bebas Neue';
+    font-size: 90px;
+    position: absolute;
+    top: 140px; 
+    left: 163px;
+    color:#f4f3ee;
+    z-index: 1;
+}
+
+.titulo2{
+    position: absolute;
+    color: #463F3A;
+    z-index: 5;
+    font-family: "Bebas Neue", "Gill Sans MT condensed";
+    font-size: 43px;
+}
+
+#reserva{
+    left: 120px;
+}
+
+.textos{
+    font-family: 'Roboto Thin', 'Segoe UI light', sans-serif;
+}
+
+#mensagem{
+    font-size: 32px;
+    top: 75px;
+    position: relative;
+   
+}
+
+#da2section{
+    border-color: #F4F3EE;
+    background-color: rgba(244, 243, 238, 0);
+    width: 214px;
+    height: 61px;
+    border-width: 5px;
+    position: absolute;
+    font-family: 'Bebas Neue';
+    font-size: 29px; 
+    right: 115px;
+    top: 474px;
+    animation-name: animacao;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#section3{
+    top: 1082px;
+    width: 480px;
+    height: 757px;
+}
+
+#segslideshow{
+     position: absolute;
+     top: 12px;
+     left: 22px;
+     border: 3px solid #BB7E5D;
+}
+
+#textoentret{
+    position: relative;
+    text-align: center;
+    top: 550px;
+    left: 0px;
+    z-index: 3;
+    font-size: 23px;
+}
+
+
+#section3 h2{
+    top: 35px;
+    left: 32px;
+    font-size: 78px;
+    color: #463F3A;
+}
+
+#section4{
+    top: 1825px;
+}
+
+
+#section4 h2{
+    font-size: 90px;
+    color: #BECC6B;
+}
+
+#section4 div{
+    position: relative;
+    top: 247px;
+    left: 40px;
+
+}
+
+#section4 h3{
+    color: #fff;
+    font-family: 'Gill Sans MT';
+    font-size: 28px;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+
+#section4 button{
+    background-color: rgba(255, 255, 255, 0);
+    width: 180px;
+    height: 50px;
+    border: none;
+    font-size: 33px;
+    position: absolute;
+    font-family: 'Bebas Neue', 'Gill Sans MT', sans-serif;
+    color: #FFF;
+    z-index: 3;
+    top: 330px;
+    left: 150px;
+    animation-name: animacao2;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#section5{
+    top: 2444px;
+    position: absolute;
+}
+
+#restaurante{
+    position: relative;
+    top: 25px;
+    left: 20px;
+    border: 3px solid #BB7E5D;
+}
+
+#textogastr{
+    width: 85%;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    top: 650px;
+    left: 55px;
+    z-index: 2;
+}
+
+
+#section5 h2{
+    font-size: 90px;
+    position: absolute;
+    color: #463F3A;
+    top: 60px;
+    left: 47px;
+    z-index: 1;
+}
+
+#footer1{
+    top: 3352px;
+}
+
+footer button{
+    border-color: #F4F3EE;
+    background-color: rgba(244, 243, 238, 0);
+    width: 140px;
+    height: 40px;
+    border-width: 4px;
+    font-size: 12px;
+    position: absolute;
+    font-family: 'Bebas Neue', 'Gill Sans MT', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    top: 145px;
+    left: 40px;
+}
+
+.redesocial{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    left: 24px;
+    top: 15px;
+    position: relative;
+}
+
+#logofooter{
+    width: 165px;
+    height: 76px;
+    position: relative;
+    top: 16px;
+    left: 32px;
+}
+
+
+iframe{
+    position: relative;
+    top: 16px;
+    left: 233px;
+}
+
+#topodocadastro{
+    width: 480px;
+    height: 145px;
+    position: absolute;
+    top: 100px;
+}
+
+#englobando-form{
+    position: absolute;
+    top: 245px;
+    z-index: 0;
+    width: 480px;
+    height: 500px;
+}
+
+#fundoCadastro2{
+    object-fit: cover;
+    width: 480px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    height: 700px;
+    transform: translate(-50%,-50%);
+}
+
+#alternativalogin{
+    position: relative;
+    z-index: 1;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-weight: 400;
+    color: #F4F3EE;
+}
+
+#alternativalogin p{
+    position: relative;
+    top: 420px;
+    left: 0px;
+    z-index: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+}
+
+#form-login{
+    position: absolute;
+    top: 580px;
+    left: 25px;
+}
+
+#iconeLogin{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 290px;
+    left: 177px;
+}
+
+#formulario1{
+    position: absolute;
+    z-index: 6;
+    width: 430px;
+    top: 580px;
+    left: 25px;
+}
+
+input::placeholder{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+form input:focus, select:focus {
+        box-shadow: 0;
+        border: none;
+        outline: 0;
+    } 
+
+input{
+    height: 45px;
+    background-color: #F4F3EE;
+    border: 0;
+    color: #000;
+    padding-left: 6px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-size: 20px;
+}
+
+
+.campo{
+    margin-bottom: 8px;
+    margin-right: 3px;
+    border-radius: 3px;
+}
+
+section h2{
+    font-family: "Bebas Neue", "Gill Sans MT condensed";
+    color:#F4F3EE;
+    font-size: 43px;
+}
+
+#container2 select{
+    background-color:#F4F3EE;
+    font-size: 20px;
+    font-family: 'Roboto';
+    height: 45px;
+    width: 215px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    border: 0;
+    border-radius: 3px;
+    padding-left: 6px;
+}
+
+#endUser{
+    width: 125px;
+}
+
+#formulario2{
+    position: absolute;
+    z-index: 7;
+    top: 955px;
+    left: 25px;
+}
+
+#formulario2 input::placeholder{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#cadastrar{
+    width: 420px;
+    height: 60px;
+    font-family: 'Bebas Neue', 'Gill Sans MT';
+    font-size: 40px;
+    margin-top: 10px;
+    border-color: #F4F3EE;
+    background-color: rgba(244, 243, 238, 0);
+    border-width: 5px;
+    color: #F4F3EE;
+    border-style: solid;
+}
+
+#footer2{
+    top: 1280px;
+}
+
+#fundoCadastro{
+    height: 1060px;
+    width: 480px;
+}
+
+.quartos{
+    position: absolute;
+    z-index: 4;
+    border-color: #BB7E5D;
+    border-width: 3px;
+    border-style: solid;
+    width: 95%;
+    height: 660px;
+}
+
+#topo-reserva{
+    position: absolute;
+    z-index: 0;
+    top: 116px;
+    width: 480px;
+    height: 130px;
+}
+
+#quantidades{
+    background-color: #BECC6B;
+    width: 480px;
+    height: 84px;
+    position: absolute;
+    z-index: 0;
+    top: 246px;
+}
+
+#quantidades input{
+    margin-bottom: 8px;
+}
+
+#form-reserva{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+
+#estadia input{
+    background-color: #FDFFF7;
+    height: 28px;
+    font-family: 'Roboto';
+    margin-right: 10px;
+    width: 155px;
+    font-size: 16px;
+}
+
+#form-reserva label{
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 13px;
+    vertical-align: middle;
+    color:#463F3A;
+}
+#estadia{
+    position: relative;
+    top: 0px;
+}
+
+#pessoas{
+    position: relative;
+}
+
+#pessoas :first-child{
+    margin-right: 4px;
+}
+
+#pessoas select{
+    border: 0;
+    height: 28px;
+    width: 94px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: 'Roboto Thin', 'Segoe UI Light', sans-serif;
+    background-color: #FDFFF7;
+}
+
+#primeiroselect{
+    margin-right: 10px;
+}
+
+#quarto1{
+    left: 12px;
+    top: 110px;
+}
+
+#quarto2{
+    left: 12px;
+    top: 796px;
+}
+
+#quarto3{
+    left: 12px;
+    top: 1482px
+}
+
+#quarto4{
+    left: 12px;
+    top: 2168px;
+}
+
+.quarto{
+    margin: 22px;
+    width: 406px;
+    height: 274px;
+}
+#titulo2Reserva{
+    position: relative;
+    color:#463F3A;
+    left: 19px;
+    font-family: 'Roboto Thin', 'Segoe UI Light', sans-serif;
+    z-index: 9;
+    margin-top: 6px;
+}
+
+.descricao{
+    position: relative;
+    left: 19px;
+    font-family: 'Roboto', 'Segoe UI Light', sans-serif;
+    color: #BB7E5D;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+
+}
+
+.descricao2{
+    position: relative;
+    left: 19px;
+    font-family: 'Roboto Light', 'Segoe UI Light', sans-serif;
+    font-size: 18px;
+    color: #463F3A
+}
+
+#container4 hr{
+    margin-top: 12px;
+    margin-bottom: 12pxs;
+    width: 415px;
+}
+
+.preco{
+    position: relative;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    left: 19px;
+    font-size: 30px;
+    margin-top: 15px;
+    color:#463f3a;
+}
+
+.preco2{
+    position: relative;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-size: 12px;
+    left: 19px;
+}
+
+.botaoreserva{
+    position: relative;
+    font-family: 'Bebas Neue', 'Gill Sans MT', sans-serif;
+    border-style: solid;
+    border-color:#463f3a;
+    border-width: 3px;
+    color:#463f3a;
+    left: 19px;
+    margin-top: 15px;
+    width: 415px;
+    height: 55px;
+    font-size: 40px;
+    background-color: rgba(000, 000, 000, 0);
+}
+
+footer{
+        width: 480px;
+        height: 202px;
+        background-color: #463F3A;
+        position: absolute;
+        z-index: 5;
+}
+
+#footer4{
+    top: 2854px;
+}
+
+#footer3{
+    top: 825px;
+}
+
+}
