@@ -177,13 +177,15 @@ section{
     width: 480px;
 }
 
+.margin-default{
+    width: 480px;
+}
+
 header{
     background-color: #FDFFF7;
     position: absolute;
-    width: 480px;
     z-index: 3;
     height: 116px;
-
 }
 
 #usuario{
