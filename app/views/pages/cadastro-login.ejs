@@ -80,6 +80,28 @@
 
                         <section id="formulario1"> 
                         <h2>INFORMAÇÕES PESSOAIS</h2> <br>
+                        <% if(errors){
+                            var err_nome = ""
+                            var err_sobrenome = ""
+                            var err_telefone = ""
+                            var err_celular = ""
+                            var err_email = ""
+                            var err_cpf = ""
+                            var err_cidade = ""
+                            var err_rua = ""
+                            var err_bloco = ""
+                            errors.erros.forEach(function(erro){
+                                if (erro.param == "nome"){ err_nome = "erro" }
+                                if (erro.param == "sobrenome"){ sobrenome = "erro" }
+                                if (erro.param == "telefone"){ err_telefone = "erro" }
+                                if (erro.param == "celular"){ err_celular = "erro" }
+                                if (erro.param == "email"){ err_email = "erro" }
+                                if (erro.param == "cpf"){ err_cpf = "erro" }
+                                if (erro.param == "cidade"){ err_cidade = "erro" }
+                                if (erro.param == "rua"){ err_rua = "erro" }
+                                if (erro.param == "bloco"){ err_bloco = "erro" }
+                            })
+                        }%>
                                 <form id="form" action="/cadastro-login" method="post">
                                     <fieldset>
                                     <input type="text" id="nome" class="campo" name="nome" placeholder="Nome" size="14px">
@@ -117,7 +139,7 @@
                                       </select>
                                     <input type="text" id="cidadeUser" class="campo" name="cidade" placeholder="Cidade" size="16">
                                     <input type="text" id="ruaUser" class="campo" name="rua" placeholder="Rua" size="25">
-                                    <input type="number" id="endUser" class="campo" name="casa-apto" placeholder="Casa/Apto">
+                                    <input type="number" id="endUser" class="campo" name="bloco" placeholder="Casa/Apto">
                                 </fieldset>
                                 </form>
                         </section>
@@ -129,7 +151,7 @@
                             <input type="text" id="nomedeUser" class="campo" name="nomedeUser" placeholder="Nome de Usuário" size="38">
                             <input type="password" id="senha" class="campo" name="senha" placeholder="Crie sua senha" size="38">
                             <input type="password" id="confirmSenha" class="campo" name="confirmSenha" placeholder="Confirme sua senha" size="38">
-                            <input type="submit" id="cadastrar" content="CADASTRAR">
+                            <a href="/"><input type="submit" id="cadastrar" content="CADASTRAR"></a>
                         </fieldset>
                         </form>
                         </section>

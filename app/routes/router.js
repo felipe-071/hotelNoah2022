@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
 
 router.get("/cadastro-login", (req,res)=>{
     res.render("pages/cadastro-login", {"errors": null, "valores": {"nome":"", "sobrenome": "", "telefone":"", "celular":"", "email":"", "cpf":"",
-        "select":"", "cidade":"", "rua": "", "casa-apto":""}})
+        "select":"", "cidade":"", "rua": "", "bloco":""}})
 });
 
 router.get("/reserva", (req,res)=>{
@@ -26,7 +26,7 @@ router.post("/cadastro-login",
     /*select??*/
     body("cidade").isLength({min: 15, max: 40}),
     body("rua").isLength({min: 10, max: 70}),
-    body("rua").isLength({min: 1, max: 3}),
+    body("bloco").isLength({min: 1, max: 3}),
 
     function (req,res){
         const errors = validationResult(req);
@@ -34,7 +34,7 @@ router.post("/cadastro-login",
             console.log(errors);
             return res.render("pages/cadastro-login", {"errors": errors, "valores": req.body});
         }
-    console.log(req.body)
+    console.log(req.body);
 });
 
 
